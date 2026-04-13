@@ -112,5 +112,58 @@ int age = input.nextInt();
 System.out.println("Your age is  " + age);
 ```
 
-## Screenshot example 
+## Screenshot example
+
 ![screenshot example](images/screenshot-example.png)
+
+---
+
+
+## Building Strings
+
+
+### String Concatenation
+```java
+int id = 10135;
+String name = "Brandon Plyers";
+
+float pay = 5239.77f;
+
+// String messageTemplate = "Brandon Plyers id:10135 $5239.77";
+String messageUsingConcat =  name + " id:" + id + " $" + pay;
+
+System.out.println(messageUsingConcat);
+
+```
+
+### String.format
+
+```java
+int id = 10135;
+String name = "Brandon Plyers";
+
+float pay = 5239.77f;
+
+// String messageTemplate = "Brandon Plyers id:10135 $5239.77";
+String messageUsingStringFormat = String.format("%s id:%d $%.2f", name, id, pay);
+
+System.out.println(messageUsingStringFormat);
+
+```
+
+## If
+
+```java
+int magicNumber = 99;
+boolean condition = magicNumber < 100 ;
+
+if (condition) {
+    System.out.println("condition is true");
+    System.out.println("do something if it is true");
+}
+
+```
+
+
+
+
