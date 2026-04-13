@@ -19,6 +19,9 @@
 5. Name the package `com.pluralsight`
 6. Right-click on the package you just created and choose **New** > **Java class**
    - Be careful not to add the .java file extension, it will be added for you
+7. This will be the class that starts your Java application. Common names for the class will be `App` or `Program`.
+8. Add a `main` method to your class.
+   > type `main` and choose the live code snippet and the method will be written for you
 
 ## Commit Your Code
 
@@ -32,14 +35,10 @@
 6. Click the "Commit & Push" button if this is a subsequent commit (2nd time +)
    > Note that if you commit and then need to push you can go to the Git Menu and choose> Push
 
-
 ## Share on Github
 
 1. In the file menu at the top, Choose Git > Github > Share project on Github
 2. In the window, uncheck "private" (we want our repositories to be public)
-
-
-
 
 ## Naming Conventions
 
@@ -49,3 +48,66 @@
 - commit message (initial commit) lowercase
 - repository-name (shopping-app) lowercase with dashes between words (kebab-case)
 - localVariable (item) camelCasing
+
+## Variables
+
+```java
+//variable declaration
+String favoriteColor;
+
+//variable declaration and initialization
+String favoriteColor = "yellow";
+
+```
+
+## Data Types
+
+### Numbers
+
+Do I need decimal places?
+
+- Yes
+  - float (smaller)
+  - double (bigger) \*\*
+- No
+  - byte (smallest)
+  - short (smaller)
+  - int (small)
+  - long (big)
+
+### Text
+
+Do I need store text?
+
+- Yes
+- Is it one character (often a letter)
+  - Yes
+    - char 'a'
+  - No (multiple characters)
+    - String "a dog"
+
+### Boolean
+
+true or false
+
+## Reading Input
+
+### Reading a String
+
+```java
+Scanner input = new Scanner(System.in);
+System.out.print("Enter your name: ");
+
+String name = input.nextLine();
+System.out.println("Howdy " + name);
+```
+
+### Reading a Number
+
+```java
+Scanner input = new Scanner(System.in);
+System.out.print("Enter your age: ");
+
+int age = input.nextInt();
+System.out.println("Your age is  " + age);
+```
