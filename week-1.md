@@ -111,3 +111,6 @@ System.out.print("Enter your age: ");
 int age = input.nextInt();
 System.out.println("Your age is  " + age);
 ```
+
+## Screenshot example 
+![screenshot example](images/screenshot-example.png)
