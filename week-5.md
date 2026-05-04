@@ -89,3 +89,26 @@
 - Request
   - Know
   - Do
+
+## Terminology
+
+− encapsulation
+    - class with private fields (attributes)
+    - housing
+    - data holder
+− class
+    - blueprint, cookie cutter
+− object
+    - building/house, cookie
+− constructor
+    - builder or construction men
+    - method used to do create an object instance from the class 
+    - commonly used to initialize attributes
+− instantiate an object
+    - create an object instance from the class
+    - 
+− call a method
+    - run a method
+    - take an action
+    - done by typing the name of the method followed by parenthesis
+− overload a method
