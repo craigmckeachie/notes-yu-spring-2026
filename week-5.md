@@ -30,3 +30,62 @@
     - combHair
     - read
 
+### Exercise 1 Objects
+
+- Guest
+- Room
+- Employee
+  - Clerk
+- Receipt
+- Restaurant
+- Meal
+- Department
+  - FrontOffice
+  - Housekeeping
+- Request
+- RoomKey?
+- Phone?
+
+
+
+### Exercise 2 Responsibilities
+
+- Guest
+  - Know (fields/getters)
+    - Credit Card
+    - Drivers License
+    - check-in date
+    - checkout date
+    - Assigned Room (Room)
+  - Do (methods)
+    - check in 
+- Reservation
+- Drivers License (Identification)
+- Credit Card
+  - Know
+    - number
+    - name
+    - CVC code
+    - expiration date
+- Room
+  - Know
+    - number
+  - Do
+- Employee (Clerk)
+  - Know
+  - Do
+- Receipt
+  - Know
+  - Do
+- Restaurant
+  - Know
+  - Do
+- Meal
+  - Know
+  - Do
+- Department (Front Office, Housekeeping, Maintenance)
+  - Know
+  - Do
+- Request
+  - Know
+  - Do
