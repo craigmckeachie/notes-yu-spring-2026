@@ -1,6 +1,9 @@
 # Week 5
 
-# 2 Types responsibilities
+
+## Objects
+
+### 2 Types responsibilities
 
 
 - Know, Brain, Store, Nouns (facts, data)  = fields, getters and setters 
