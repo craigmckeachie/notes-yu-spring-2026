@@ -118,11 +118,10 @@ System.out.println("Your age is  " + age);
 
 ---
 
-
 ## Building Strings
 
-
 ### String Concatenation
+
 ```java
 int id = 10135;
 String name = "Brandon Plyers";
@@ -164,6 +163,28 @@ if (condition) {
 
 ```
 
+## Methods
 
+### Big Picture
 
-
+- Are verbs
+- Are tasks being done on your behalf
+  - sometimes it is easier to do things yourself
+  - but, if you have to many things to do
+    - it can be helpful to break the task down into smaller tasks
+  - but, if you do the same things over and over again then delegating these tasks can be useful
+  - methods are not only about potential reuse but they are about reducing complexity
+- Can be used
+  - inside the class where they are defined (private)
+  - OR
+  - outside the class where they are defined (public)
+- Can
+  - give you back something when completed (return) something
+  - OR
+  - can give you back nothing (void)
+- Can require inputs to do the task (parameters)
+- Can be organized together (in classes)
+- Some tasks you can just use quickly (Class.doSomething) (static)
+- Other tasks you need to do some setup before you can use them
+  - Class object = new Class();
+  - object.doSomething();
