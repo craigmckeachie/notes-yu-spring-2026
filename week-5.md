@@ -111,3 +111,25 @@
   - take an action
   - done by typing the name of the method followed by parenthesis
 − overload a method
+   - same method name, different parameters
+
+
+## Methods
+- What does high cohesion mean?
+- Three types of methods
+  - constructors
+  - getters and setters
+  - other methods
+- 
+## Method Overloading
+- Describe method overloading in six words or less.
+  - same method name, different parameters
+- What is the method signature for this method?
+  ```
+
+- How do you determine a method signature?
+  - name of each method + type of each parameter
+- Why Overload
+- Why Overload Constructors
+  - many people, many different situations
+
