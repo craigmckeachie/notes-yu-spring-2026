@@ -93,22 +93,21 @@
 ## Terminology
 
 − encapsulation
-    - class with private fields (attributes)
-    - housing
-    - data holder
-− class
-    - blueprint, cookie cutter
+  - class with private fields (attributes)
+  - housing
+  - data holder
+- class
+  - blueprint, cookie cutter
 − object
-    - building/house, cookie
+  - building/house, cookie
 − constructor
-    - builder or construction men
-    - method used to do create an object instance from the class 
-    - commonly used to initialize attributes
+  - builder or construction men
+  - method used to do create an object instance from the class 
+  - commonly used to initialize attributes
 − instantiate an object
-    - create an object instance from the class
-    - 
+  - create an object instance from the class (new ClassName())
 − call a method
-    - run a method
-    - take an action
-    - done by typing the name of the method followed by parenthesis
+  - run a method
+  - take an action
+  - done by typing the name of the method followed by parenthesis
 − overload a method
