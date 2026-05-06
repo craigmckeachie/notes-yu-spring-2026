@@ -89,7 +89,9 @@
   - Know
   - Do
 
-## Terminology
+## Module 2 Java Classes: A Review
+
+### Terminology
 
 − encapsulation
   - class with private fields (attributes)
@@ -113,7 +115,7 @@
    - same method name, different parameters
 
 
-## Methods
+### Methods
 - What does high cohesion mean?
   - related information and actions
   - connected
@@ -123,7 +125,7 @@
   - getters and setters
   - other methods
 - 
-## Method Overloading
+### Method Overloading
 
 - How do you determine a method signature?
   - name of each method + type of each parameter
@@ -131,4 +133,27 @@
   - single method name can handle many scenarios
 - Why Overload Constructors
   - many people, many different situations
+
+## Module 3: Unit Testing
+
+
+- "MethodName_StateUnderTest_ExpectedBehavior"
+  - IsAvailable_UnoccupiedClean_ReturnsTrue
+  - IsAvailable_OccupiedDirty_ReturnsFalse
+
+### Quiz
+1. What are the 3 types of testing in the testing pyramid? 
+   - Which type of tests should be done more? Why? 
+   - Which type of tests should you be doing less? Why?
+2. What is the name of testing framework we will use to test our code in class? 
+   - What version of JUnit will we use?
+3. In what folder in a Maven project do you write your tests?
+4. If you want to generate a test you right click on what to create a test?
+   - a) the test folder
+   - b) the package folder you created inside the test folder
+   - c) Code-> New Test
+   - d) you right click in the file you are writing the test for and choose Generate > Test
+5. How do you add JUnit to your IntelliJ project?
+6. What are the three main sections of a test?
+7. What are some common patterns for naming unit tests in Java?
 
