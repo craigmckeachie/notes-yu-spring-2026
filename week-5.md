@@ -137,6 +137,21 @@
 ## Module 3: Unit Testing
 
 
+
+
+
+##  The Method-Centric Style (Roy Osherove)
+Common in large enterprise codebases, this style keeps tests organized by the method they are testing. This is helpful for developers who want to see all tests for a specific function grouped together in their IDE.
+
+*   **Pattern:** `MethodName_StateUnderTest_ExpectedBehavior`
+
+| **Example** | **Pros/Cons** |
+| :--- | :--- |
+| `calculateTax_InvalidIncome_ThrowsException` | **Pro:** Very easy to find tests for a specific method. |
+| `withdraw_InsufficientFunds_ReturnsError` | **Con:** If you rename the method, you have to rename the test. |
+---
+
+
 - "MethodName_StateUnderTest_ExpectedBehavior"
   - IsAvailable_UnoccupiedClean_ReturnsTrue
   - IsAvailable_OccupiedDirty_ReturnsFalse
