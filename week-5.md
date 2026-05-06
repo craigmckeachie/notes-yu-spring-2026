@@ -10,9 +10,8 @@
 ### 2 Types responsibilities
 
 - What are the 2 types of responsibilities an object can have?
-
-- Know, Brain, Store, Nouns (facts, data)  = fields, getters and setters 
-- Do, Muscle, Perform, Verbs (actions) = methods
+  - Know, Brain, Store, Nouns (facts, data)  = fields, getters and setters 
+  - Do, Muscle, Perform, Verbs (actions) = methods
 
 
 - Person
@@ -100,36 +99,36 @@
   - blueprint, cookie cutter
 − object
   - building/house, cookie
-− constructor
+- constructor
   - builder or construction men
   - method used to do create an object instance from the class 
   - commonly used to initialize attributes
-− instantiate an object
+- instantiate an object
   - create an object instance from the class (new ClassName())
 − call a method
-  - run a method
+- run a method
   - take an action
   - done by typing the name of the method followed by parenthesis
-− overload a method
+- overload a method
    - same method name, different parameters
 
 
 ## Methods
 - What does high cohesion mean?
+  - related information and actions
+  - connected
+  - organize related things
 - Three types of methods
   - constructors
   - getters and setters
   - other methods
 - 
 ## Method Overloading
-- Describe method overloading in six words or less.
-  - same method name, different parameters
-- What is the method signature for this method?
-  ```
 
 - How do you determine a method signature?
   - name of each method + type of each parameter
-- Why Overload
+- Why Overload?
+  - single method name can handle many scenarios
 - Why Overload Constructors
   - many people, many different situations
 
