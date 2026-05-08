@@ -172,3 +172,27 @@ Common in large enterprise codebases, this style keeps tests organized by the me
 6. What are the three main sections of a test?
 7. What are some common patterns for naming unit tests in Java?
 
+## Static
+
+1. What are the two types of variables and methods in Java
+2. How many copies of a static variable or method will an application have?
+3. Static variables should never do what?
+4. Static methods are used as ___ or ___ helper function to accomplish common tasks
+5. Static methods are _____ functions.
+6. Static methods are not dependent on ____ variables.
+7. You cannot do what with a static class?
+8. Static classes are a library of variables and methods (without any instance data)
+  
+
+ ## Class Interactions
+
+ 1. The goal is high ____ within one class and low ____ between classes.
+ 2. What is meant by a "Has-A" relationship and give me three examples from the real world.
+ 3. In a class diagram:
+    1. What goes at the header?
+    2. What goes in the top (first) section (after the header)
+    3. What goes in the bottom section.
+    4. What does a minus sign "-" mean.
+    5. What does a plus sign "+" mean. 
+ 4. Of the three classes in the examples: Deck, Hand, Card which two are loosely coupled?
+ 5. 
