@@ -19,16 +19,9 @@
 3. What does the access modifier protected mean? How often should you use it on a data member? What is an alternative way to get to the data?
 
 
-
-- Animal - Dog example
-
+- Then Animal - Dog or Cat example
 
 
-## Three basic components of a class in a diagram:
-
-Top section: The Class Name
-
-Middle section: Attributes (variables).
 
 ## Exercise 0
 
@@ -40,6 +33,24 @@ Create the Person and Student classes as shown below.
 |---|---|---|---|
 | Animal | name | Cat | breed |
 | Person | name | Student | studentID |
+
+## Working with Constructors Quiz
+
+1. Child class constructors automatically do what?
+   - call the super class parameterless constructor
+2. How would I call the super class parameterless constructor from a child class constructor?
+   ```Java
+    super();
+   ```
+
+- Java will do things for you with parameterless constructors
+  - generate a parameterless constructor for you automatically 
+    - as long as you haven't created one with parameters
+  - call the super class parameterless constructor from any constructor you create in a child class
+  - BUT, when you create a constructor with parameters in a child class you usually don't want to call the parameterless constructor in the super class...you want to call a constructor in the super class with parameters so it can store them for you
+    - you want to leave it up to the super class to do stuff for you 
+
+
 
 
 
