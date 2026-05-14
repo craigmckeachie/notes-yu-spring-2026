@@ -1,0 +1,75 @@
+classDiagram
+    class Vehicle {
+        <<Abstract>>
+        +String make
+        +String model
+        +int year
+        +float currentSpeed
+        +float fuelLevel
+        +int passengerCapacity
+        +int doorCount
+        +startEngine()
+        +stopEngine()
+        +accelerate()
+        +brake()
+        +refuel()
+        +steer(direction)
+        +openDoor(index)
+    }
+
+    class LandVehicle {
+        <<Abstract>>
+        +float tirePressure
+        +long odometer
+        +String licensePlate
+        +int wheelCount
+        +int axleCount
+        +park()
+        +changeTire()
+        +reverse()
+    }
+
+    class Hovercraft {
+        +String hullMaterial
+        +float skirtPressure
+        +float fanDiameter
+        +float cargoWeight
+        +bool hasCanopy
+        +inflateSkirt()
+        +hover()
+        +thrust()
+    }
+
+    class Moped {
+        +bool stepThroughFrame
+        +int engineDisplacementCC
+        +bool hasPedals
+        +kickstart()
+        +popWheelie()
+    }
+
+    class Car {
+        +float trunkCapacity
+        +String fuelType
+        +openTrunk()
+        +lockChildSafety()
+    }
+
+    class SemiTruck {
+        +String trailerType
+        +float maxTowingWeight
+        +float cargoWeight
+        +int driveAxles
+        +bool sleeperCab
+        +attachTrailer()
+        +engageAirBrakes()
+        +slideAxles()
+    }
+
+    %% Relationships
+    Vehicle <|-- LandVehicle
+    Vehicle <|-- Hovercraft
+    
+    LandVehicle <|-- Moped
+    LandVehicle <|-- Car
+    LandVehicle <|-- SemiTruck
