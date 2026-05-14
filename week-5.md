@@ -195,4 +195,3 @@ Common in large enterprise codebases, this style keeps tests organized by the me
     4. What does a minus sign "-" mean.
     5. What does a plus sign "+" mean. 
  4. Of the three classes in the examples: Deck, Hand, Card which two are loosely coupled?
- 5. 
