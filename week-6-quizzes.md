@@ -206,3 +206,34 @@
     - `touch filename`
 13. What is the command to delete a file or directory?
     - `rm directory` or `rm filename`
+
+
+## Abstraction Quiz
+
+1. What two things can be abstract?
+2. An abstract class cannot be used to...?
+3. You know you could use an abstract class when someone asks this question?
+4. Where do you put the reserved keyword `abstract` to make a class abstract?
+5. Is it common to inherit from an abstract class? How many classes can you inherit from an abstract class?
+6. Can you create a collection (for example an ArrayList or Array) and give it a generic data type of an abstract class
+7. What is the difference between a method signature and it's implementation. Give some examples from your Github repositories.
+8. Abstract methods must be declared in an ____ class.
+9. Abstract methods must be _____ in a child/sub/derived class.
+10. Give me one or more tips given in the workbook for using AI to learn Java?
+
+
+
+## Branching and Merging with Git Quiz
+
+1. Describe a practical example of branching where your production code has an issue that needs to urgently be fixed but you are halfway through working on a new feature on your computer?
+2. What is the command to create a branch in git (describe all 3 parts of it)?
+3. The reference "head"  refers to the branch you are ____ __?
+4. Does the branch command in git put you in the new branch by default?
+5. What is the command to create a branch and checkout the branch (move into it) using one command with options/flags? Bonus: Is there another way to do the same thing?
+6. What is the command to view all branches?
+7. What is the command and argument to delete a local branch?
+8. The `git merge <branch-name-1>` command merges into `brach-name-1` or does it merge `branch-name-1` into the current branch (is it the source or the destination)?
+9. A merge conflict will always occur when two branches make edits to the same file?
+10. A merge conflict will always occur when two branches make edits to the same line in the same file?
+11. How do you tell git that you've resolved a merge conflict? What do you need to do?
+12. What command and flag will get you out of a merge that is non-trivial so you can reset and try a different approach or try again?
