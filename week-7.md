@@ -139,3 +139,16 @@ The lambda receives the parameter (`name`) and performs the behavior inline.
 
 # Sorting
 - [Comparable vs Comparator and Sorting](https://chatgpt.com/share/6a0b34ac-0ec4-83ea-93d2-e083aa4535dc)
+
+
+
+
+## Exercises
+
+- Interfaces on pages 20-22 Diagram (I’ll provide one for reference should be complete already)
+
+### High Level Implement the Diagram in Code
+- Exercise Portfolio on pages 31-32 Part 1 and 2
+- Exercise Interfaces on page 40 Exercise 2 Part 1
+
+- Exercise Interfaces on page 41 Exercise 3 (optional)

@@ -95,3 +95,41 @@
     - forEach -- do something for each
     - Sorted  -- Sort
     - Map -- Transform
+
+
+
+## Sorting Quiz
+
+- https://howtodoinjava.com/java8/stream-sorted-method/
+
+1. What is the method that you can call on stream to sort it?
+2. There are two overloads to the sorted method, what does each take as parameter(s).
+3. What is a Comparator?
+   - functional interface
+   - defines custom sorting logic
+
+
+1. What is the method that you can call on stream to sort it?
+   - `sorted`
+2. There are two overloads to the sorted method, what does each take as parameter(s).
+   - no parameters (parameterless)
+   - one parameter a Comparator
+3. What is a Comparator?
+   - functional interface
+   - defines custom sorting logic
+<!-- https://gemini.google.com/share/3a7d068066c5) -->
+
+
+## Interfaces Quiz
+1. All methods on an interface must be _____?
+2. Can an interface have field/data members?
+3. A concrete class inherits (extends) a base or abstract class, you ____ an interface?
+4. A concrete class that extends an abstract class MUST override all ____ methods.
+5. A concrete class that implements an interface MUST override ____ methods.
+6. A concrete class can inherit (extend) multiple classes: true or false?
+7. A concrete class can implement multiple interfaces: true or false?
+8. Concrete classes can be instantiated: true or false?
+9. Abstract classes can be instantiated: true or false?
+10. Interfaces can be instantiated: true or false?
+11. If a class says it implements an interface, but the compiler
+doesn't find an implementation for the interface methods, it does what?
