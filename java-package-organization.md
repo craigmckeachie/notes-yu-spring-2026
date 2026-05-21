@@ -239,3 +239,68 @@ This structure follows a simplified layered architecture:
 ---
 
 
+
+
+## Examples
+
+### 1. Simplified File System Layout
+
+```text
+src/main/java/
+└── com/
+    └── example/
+        ├── App.java              <-- Root entry point (contains main method)
+        │
+        ├── model/
+        │   └── User.java         <-- Data structure blueprint
+        │
+        ├── data/
+        │   └── UserRepository.java <-- File I/O handler
+        │
+        └── ui/
+            └── ConsoleUi.java    <-- Scanner loop and terminal presentation
+
+```
+
+---
+
+### 2. Streamlined Structural Data Flow Diagram
+
+With this flatter layout, App.java launches from the root package level and sets the layers into motion. The model continues to travel across package boundaries to carry data.
+
+```text
+       ROOT PACKAGES                                    DATA VEHICLE FLOW
+ ─────────────────────────                        ───────────────────────────────
+
+   [ App.java (main) ]
+           │
+           │  1. Instantiates layers & wires dependencies
+           ▼
+   ┌───────────────┐
+   │      ui/      │  ◄───────────────────────────┐
+   └───────┬───────┘                              │
+           │  2. Accepts Scanner input            │
+           │     and packs data into a model      │
+           ▼                                      │
+   ┌───────────────┐                              │     ┌───────────────┐
+   │     data/     │ ─────────────────────────────┼────►│    model/     │
+   └───────┬───────┘                              │     │               │
+           │  3. Unpacks model data               │     │ (User Object) │
+           │     and appends to file              │     └───────────────┘
+           ▼                                      │
+      [users.txt]                                 │
+           │                                      │
+           └──────────────────────────────────────┘
+            4. Reading data: File rows are mapped back 
+               to models and travel all the way up to the UI.
+
+```
+
+### Key Adjustments in Code for this Layout
+
+Because the folders shifted up by one level, the only change you would make to the Java files is updating the package declarations at the very top of each file:
+
+* **App.java**: package com.example;
+* **User.java**: package com.example.model;
+* **UserRepository.java**: package com.example.data;
+* **ConsoleUi.java**: package com.example.ui;
