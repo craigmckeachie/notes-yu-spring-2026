@@ -133,3 +133,43 @@
 10. Interfaces can be instantiated: true or false?
 11. If a class says it implements an interface, but the compiler
 doesn't find an implementation for the interface methods, it does what?
+
+
+
+## Packages Quiz
+
+1. A package is a _____?
+2. Package should always be _____cased?
+3. Packages are used to:
+   1. Avoid ____ conflicts with classes?
+   2. Organizing ____ classes?
+4. A package name must match the ____ structure?
+5. How do you use a class defined in a different package (folder)?
+6. What is the difference between "a package statement at the top of a .java file" and "an import statement at the top of a .java file"
+7. What the 3 most common packages we will create to hold our code for our in class projects.
+8. Where does the App or Program class go?
+9. What goes in the model package?
+10. What goes in the data package?
+11. What goes in the ui package?
+
+
+1. A package is a _____?
+   - folder or directory
+2. Package should always be _____cased?
+   - lower
+3. Packages are used to:
+   1. Avoid [name] conflicts with classes?
+   2. Organizing [related] classes?
+4. A package name must match the [folder or directory] structure?
+5. How do you use a class defined in a different package (folder)?
+   - import the package
+6. What is the difference between "a package statement at the top of a .java file" and "an import statement at the top of a .java file"
+    - package = where is the current class
+    - import = make stuff in other folders available
+7. What the 3 most common packages we will create to hold our code for our in class projects.
+   - ui, model, data
+8. Where does the App or Program class go?
+   - at the root of the project in the root package
+9.  What goes in the model package?
+10. What goes in the data package?
+11. What goes in the ui package?
