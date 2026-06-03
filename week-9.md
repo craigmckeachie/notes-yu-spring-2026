@@ -22,6 +22,11 @@ DELETE
 TODO: -->
 
 
+- [Northwind SQL Join Scenarios Explained](https://gemini.google.com/app/283f3e5d4f097887)
+- [FULL JOIN Data Reconciliation Use Case](https://gemini.google.com/app/5d818c9b44d9b7f3)
+- [Note:Full Outer join not supported in MySQL](https://share.google/aimode/bP1XmG2HXny69ZGVU)
+
+
 
 # **SQL Join Defaults**
 
