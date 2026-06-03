@@ -15,7 +15,82 @@ UPDATE
 DELETE
 
 
-## Getting Started
+<!-- ## Getting Started
 
 1. Open MySQL Workbench
 2. On the left panel choose the Schemas panel on the bottom
+TODO: -->
+
+
+
+# **SQL Join Defaults**
+
+### ✅ **1. `JOIN` defaults to `INNER JOIN`**
+
+If you simply write:
+
+```sql
+SELECT …
+FROM A
+JOIN B ON …
+```
+
+…it **automatically means**:
+
+```sql
+INNER JOIN
+```
+
+You only get rows where the join condition matches in both tables.
+
+---
+
+### ✅ **2. Using `LEFT` or `RIGHT` _changes_ the join to an OUTER JOIN**
+
+As soon as you use **LEFT** or **RIGHT**, SQL switches the join type:
+
+- **LEFT JOIN** = **LEFT OUTER JOIN**
+- **RIGHT JOIN** = **RIGHT OUTER JOIN**
+
+These pairs are identical:
+
+```sql
+LEFT JOIN     == LEFT OUTER JOIN
+RIGHT JOIN    == RIGHT OUTER JOIN
+```
+
+In other words:
+
+> **LEFT or RIGHT automatically means OUTER.**
+> You never need to write the word OUTER.
+
+---
+
+### 🔍 **3. There is NO default that makes a join LEFT or RIGHT**
+
+You only get LEFT or RIGHT behavior if you explicitly include **LEFT** or **RIGHT**.
+If you omit them, SQL always uses INNER.
+
+---
+
+### ❗ Quick Teaching Summary
+
+- **JOIN = INNER JOIN** (default)
+- **LEFT JOIN = LEFT OUTER JOIN**
+- **RIGHT JOIN = RIGHT OUTER JOIN**
+- **FULL OUTER JOIN** must be written explicitly (not supported in MySQL)
+
+A great line to tell students:
+
+> “SQL only assumes inner joins. But if you say LEFT or RIGHT, it automatically becomes an outer join.”
+
+---
+
+![SQL JOIN DEFAULTS](sql-join-defaults.png)
+
+
+
+## JOIN References
+
+- [Visual Explanation of SQL Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+- [SQL Joins Explained in 5 minutes](https://www.acuitytraining.co.uk/news-tips/introduction-sql-joins/)

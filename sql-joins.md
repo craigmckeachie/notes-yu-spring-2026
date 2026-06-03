@@ -239,7 +239,7 @@ A great line to tell students:
 
 ---
 
-![SQL JOIN DEFAULTS](image.png)
+![SQL JOIN DEFAULTS](sql-join-defaults.png)
 
 ## References
 
