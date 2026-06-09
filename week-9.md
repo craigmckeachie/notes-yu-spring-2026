@@ -102,3 +102,43 @@ A great line to tell students:
 
 - [Visual Explanation of SQL Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 - [SQL Joins Explained in 5 minutes](https://www.acuitytraining.co.uk/news-tips/introduction-sql-joins/)
+
+---
+
+## JDBC
+
+- [JDBC and Try with Resources best practices](https://gemini.google.com/share/e24d4e118852)
+
+
+<!-- ## Mango Music
+
+- Icebreaker: Write a query to obtain your favorite song, album, or artist
+
+```
+SELECT
+  artist,
+  album,
+  year
+FROM
+  albums
+WHERE
+  artist = "King Gizzard and the Lizard Wizard"
+  AND (album LIKE "%Microtonal%" OR album = "Flying Microtonal Banana");
+
+or
+
+SELECT
+  artist,
+  song_title,
+  album,
+  year
+FROM
+  music_table
+WHERE
+  year BETWEEN 1980 AND 1987;
+``` -->
+<!-- 
+Couple tools that pair well with the Friday workshop
+Icebreaker/review today: 
+https://topherbc.github.io/Icebreaker-Apps/java-academy/week-9/3-wed-icebreaker-shuffle_mango_music.html 
+- Friday review: https://topherbc.github.io/Icebreaker-Apps/java-academy/week-9/5-fri-review-mango_xm.html -->
