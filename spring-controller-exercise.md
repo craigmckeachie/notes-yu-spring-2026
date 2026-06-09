@@ -1,9 +1,3 @@
-Here is the updated lab exercise tailored specifically to your project's package structure (`com.pluralsight.demo.internship`) and using a new entity within the internship domain: **`Interview`**.
-
-This allows students to practice the core controller concepts without touching the existing `Candidate` or `Internship` files.
-
----
-
 # Lab Exercise: Building the `InterviewController` from the Ground Up
 
 ### Objective
