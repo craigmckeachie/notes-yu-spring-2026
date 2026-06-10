@@ -34,6 +34,12 @@ Here is a quick TLDR and a couple of non-technical analogies you can use to expl
 
 ---
 
+
+# REST
+
+- [REST Cheatsheet](https://codewithcraig.netlify.app/reference/rest/)
+
+
 # Spring Annotations
 
 ## The TLDR
