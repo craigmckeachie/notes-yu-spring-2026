@@ -73,3 +73,259 @@ Imagine your Java application is an island country that *only* speaks Java, but 
 * **`@ResponseBody`** is the **Loading Crane**. When your workers finish manufacturing a product (a Java return object), the crane automatically packs it into a standard shipping container (JSON) so the foreign ship can carry it away.
 
 **The takeaway:** The annotations are instructions for Spring to act as the ultimate customs agent, translator, and traffic controller.
+
+
+The “custom query method” syntax you’re using is part of **Spring Data JPA Query Methods** (often called *derived queries*). The official documentation is here:
+
+# Spring Data
+
+### Official Spring Data JPA Reference
+
+* [Spring Data JPA Reference Documentation](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html?utm_source=chatgpt.com)
+  This is the primary source for:
+
+  * `findBy...`
+  * `Containing`, `Like`, `IgnoreCase`, `StartingWith`, etc.
+  * nested properties (`findByCompanyName`)
+  * logical operators (`And`, `Or`)
+
+### Core concept section (very important)
+
+* [Spring Data JPA Query Methods Overview](https://docs.spring.io/spring-data/jpa/reference/repositories/query-methods-details.html?utm_source=chatgpt.com)
+  Explains:
+
+  * How method names are parsed into queries
+  * Keywords like `Containing`, `Between`, `LessThan`, etc.
+  * How Spring translates method names into JPQL
+
+### If you want more advanced control (JPQL / @Query)
+
+* [Spring Data JPA @Query Annotation Docs](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html?utm_source=chatgpt.com#jpa.query-methods.at-query)
+  Covers:
+
+  * `@Query("SELECT ...")`
+  * named parameters `:company`
+  * native SQL queries
+
+---
+
+### Quick mental model (this helps a lot)
+
+Spring Data is basically doing this:
+
+```
+findByCompanyContainingIgnoreCase
+        ↓
+SELECT ... WHERE lower(company) LIKE lower('%value%')
+```
+
+So you’re not writing SQL—you’re composing keywords that Spring parses into JPQL.
+
+---
+
+Here’s a practical **Spring Data JPA derived query cheat sheet** you can actually use day-to-day. These are the keywords Spring parses from method names into JPQL.
+
+---
+
+# 🧠 Spring Data JPA Derived Query Cheat Sheet
+
+## 🔍 Basic lookups
+
+These are the foundation:
+
+```java
+findByCompany(String company)
+findByTitle(String title)
+findByLocation(String location)
+```
+
+---
+
+## 🔎 Partial matching (search-style queries)
+
+### Contains (LIKE %value%)
+
+```java
+findByCompanyContaining(String company)
+findByCompanyContainingIgnoreCase(String company)
+```
+
+👉 Matches anywhere in the string
+Example: `"goo"` → `"Google"`
+
+---
+
+### Starts with
+
+```java
+findByCompanyStartingWith(String company)
+findByCompanyStartingWithIgnoreCase(String company)
+```
+
+---
+
+### Ends with
+
+```java
+findByCompanyEndingWith(String company)
+findByCompanyEndingWithIgnoreCase(String company)
+```
+
+---
+
+## 🔠 Case handling
+
+```java
+findByCompanyIgnoreCase(String company)
+findByTitleIgnoreCase(String title)
+```
+
+---
+
+## ➕ Multiple conditions (AND / OR)
+
+### AND
+
+```java
+findByCompanyAndLocation(String company, String location)
+```
+
+### OR
+
+```java
+findByCompanyOrLocation(String company, String location)
+```
+
+---
+
+## ⚖️ Comparisons (numbers, dates, etc.)
+
+```java
+findByIdGreaterThan(Long id)
+findByIdLessThan(Long id)
+findByIdBetween(Long start, Long end)
+```
+
+Also works with dates:
+
+```java
+findByPublishedDateAfter(LocalDate date)
+findByPublishedDateBefore(LocalDate date)
+```
+
+---
+
+## ✅ Boolean fields
+
+```java
+findByPublished(boolean published)
+findByPublishedTrue()
+findByPublishedFalse()
+```
+
+---
+
+## 📄 Sorting
+
+```java
+findByCompanyOrderByTitleAsc(String company)
+findByCompanyOrderByTitleDesc(String company)
+```
+
+Or better (recommended):
+
+```java
+findByCompany(String company, Sort sort)
+```
+
+---
+
+## 📦 Collection results / IN queries
+
+```java
+findByCompanyIn(List<String> companies)
+```
+
+Example:
+
+```java
+["Google", "Microsoft"]
+```
+
+---
+
+## 🔗 Null checks
+
+```java
+findByCompanyIsNull()
+findByCompanyIsNotNull()
+```
+
+---
+
+## 🔥 Nested properties (VERY powerful)
+
+If you have relationships:
+
+```java
+findByDepartment_Name(String name)
+findByUser_Address_City(String city)
+```
+
+(Spring uses `_` for traversal)
+
+---
+
+## ✂️ Distinct results
+
+```java
+findDistinctByCompany(String company)
+```
+
+---
+
+## 🧪 Pattern matching with LIKE (manual control)
+
+```java
+findByCompanyLike(String pattern)
+```
+
+You must pass wildcards:
+
+```java
+"%goo%"
+```
+
+---
+
+## 🧩 Real-world example (what you’re doing now)
+
+Instead of:
+
+```java
+findByCompany(String company)
+```
+
+Use:
+
+```java
+findByCompanyContainingIgnoreCase(String company)
+```
+
+---
+
+## 🧭 Mental model (important)
+
+Spring basically reads your method name like:
+
+> “find + By + Company + Containing + IgnoreCase”
+
+and converts it into:
+
+```sql
+WHERE lower(company) LIKE lower('%value%')
+```
+
+---
+
+
