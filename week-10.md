@@ -326,6 +326,8 @@ and converts it into:
 WHERE lower(company) LIKE lower('%value%')
 ```
 
----
 
+# Assessment 3
 
+- [Assessment 3 Review](https://wayground.com/join?gc=54490697)
+- [Assessment Notes](https://gist.github.com/craigmckeachie/0e0d74e5520936e1d2636888ad865ff1)
