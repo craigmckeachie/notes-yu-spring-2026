@@ -113,7 +113,7 @@ Pay attention to how the reference controller:
 
 ## Task 6 — Test Your Endpoints
 
-Run the application and test each endpoint. You can use a browser for GET requests and Postman (or `curl`) for POST and DELETE.
+Run the application and test each endpoint. You can use a browser for GET requests and Insomnia (or `curl`) for POST and DELETE.
 
 Suggested test order:
 1. `GET /api/products` — should return all products from northwind
