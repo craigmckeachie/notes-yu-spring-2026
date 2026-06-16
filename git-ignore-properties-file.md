@@ -19,7 +19,7 @@ git rm --cached src/main/resources/application.properties
 Open the `.gitignore` file at the root of your project and add the filename on a new line:
 
 ```text
-application.properties
+*.properties
 
 ```
 
@@ -47,14 +47,14 @@ git rm --cached src/main/resources/application.properties
 
 ```
 
-> **What this does:** Even though you haven't committed yet, if IntelliJ automatically added the file to your staging area, this command safely pulls it back out of Git's tracking index without touching your local file.
+> **What this does:** Even though you haven't committed yet, if IntelliJ automatically added the file to your staging area, this command safely pulls it back out of Git's tracking index without touching your local file. In summary, you probably didn't need to run this command but it's good to run it just to be safe.
 
 **2. Add the file to your `.gitignore**`**
 
 Open your `.gitignore` file and add the filename to a new line:
 
 ```text
-application.properties
+*.properties
 
 ```
 
