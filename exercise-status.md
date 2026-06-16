@@ -1,4 +1,4 @@
-Let me know where you are with the current exercise:
+Let me know where you are with the current exercises:
 💯 100% Complete
 🔋 75% Done
 ⚡ 50% Halfway
